@@ -3,8 +3,8 @@ const myint = require("./db/mysql2");
 const qury = myint.dbinit({
   HOST: "127.0.0.1",
   USER: "root",
-  PASSWORD: "123456",
-  DATABASE: "test_db",
+  PASSWORD: "111111",
+  DATABASE: "test",
 });
 
 // myint.query("SELECT * FROM girl", "", qury).then((r) => {
