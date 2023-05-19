@@ -17,16 +17,16 @@ const qury = myint.dbinit({
   DATABASE: query_mysql.DATABASE,
 });
 
-let gfe = getFiles.getFileList("./").forEach((e) => {
-  let q = [];
-  q.push(enc_base64(e.path));
-  q.push(enc_base64(e.filename));
-  q.push(enc_base64(e.type));
-  myint.query("insert into disks(path,filename,type) values(?,?,?)", q, qury).then((r) => {
-    console.log("🚀 ~ file: index.js:13 ~ myint.query ~ r:", r);
-    return;
-  });
-});
+// let gfe = getFiles.getFileList("./").forEach((e) => {
+//   let q = [];
+//   q.push(enc_base64(e.path));
+//   q.push(enc_base64(e.filename));
+//   q.push(enc_base64(e.type));
+//   myint.query("insert into disks(path,filename,type) values(?,?,?)", q, qury).then((r) => {
+//     console.log("🚀 ~ file: index.js:13 ~ myint.query ~ r:", r);
+//     return;
+//   });
+// });
 console.log("🚀 ~ file: mydb.js:12 ~ gfe:", gfe);
 
 // myint.query("SELECT * FROM girl", "", qury).then((r) => {
