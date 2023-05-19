@@ -19,6 +19,6 @@
   "dependencies": {
     "mongodb": "^5.5.0",
     "mysql": "^2.18.1",
-    "node-aase": "^1.0.13"
+    "node-aase": "^1.0.14"
   }
 }
